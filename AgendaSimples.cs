@@ -21,5 +21,11 @@ namespace AgendaSimples
         {
 
         }
+
+        private void btnAddContato_Click(object sender, EventArgs e)
+        {
+            Contato objetoContato= new Contato();
+            lstContatos.Items.Add(objetoContato.ToString());
+        }
     }
 }
