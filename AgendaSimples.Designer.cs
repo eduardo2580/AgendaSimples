@@ -36,6 +36,8 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.btnAddContato = new System.Windows.Forms.Button();
             this.lstContatos = new System.Windows.Forms.ListBox();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelNome
@@ -62,7 +64,7 @@
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTelefone.Location = new System.Drawing.Point(48, 137);
+            this.labelTelefone.Location = new System.Drawing.Point(48, 112);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(71, 20);
             this.labelTelefone.TabIndex = 2;
@@ -84,7 +86,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(146, 137);
+            this.txtTelefone.Location = new System.Drawing.Point(146, 114);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
             this.txtTelefone.TabIndex = 5;
@@ -105,14 +107,33 @@
             this.lstContatos.FormattingEnabled = true;
             this.lstContatos.Location = new System.Drawing.Point(291, 27);
             this.lstContatos.Name = "lstContatos";
-            this.lstContatos.Size = new System.Drawing.Size(214, 225);
+            this.lstContatos.Size = new System.Drawing.Size(307, 225);
             this.lstContatos.TabIndex = 7;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Location = new System.Drawing.Point(48, 150);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(53, 20);
+            this.labelEmail.TabIndex = 8;
+            this.labelEmail.Text = "E-Mail";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(146, 152);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 9;
             // 
             // AgendaSimples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 321);
+            this.ClientSize = new System.Drawing.Size(698, 321);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.lstContatos);
             this.Controls.Add(this.btnAddContato);
             this.Controls.Add(this.txtTelefone);
@@ -139,6 +160,8 @@
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Button btnAddContato;
         private System.Windows.Forms.ListBox lstContatos;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
 
