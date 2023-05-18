@@ -38,6 +38,7 @@
             this.lstContatos = new System.Windows.Forms.ListBox();
             this.labelEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNome
@@ -127,11 +128,22 @@
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 9;
             // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(291, 258);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(307, 51);
+            this.btnOrdenar.TabIndex = 10;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
+            // 
             // AgendaSimples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 321);
+            this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.lstContatos);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.ListBox lstContatos;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 
