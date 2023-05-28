@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 321);
+            this.ClientSize = new System.Drawing.Size(647, 321);
             this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.labelEmail);
@@ -154,7 +154,11 @@
             this.Controls.Add(this.labelTelefone);
             this.Controls.Add(this.labelSobrenome);
             this.Controls.Add(this.labelNome);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(663, 360);
+            this.MinimumSize = new System.Drawing.Size(663, 360);
             this.Name = "AgendaSimples";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda Simples";
             this.Load += new System.EventHandler(this.AgendaSimples_Load);
             this.ResumeLayout(false);

@@ -62,6 +62,7 @@ namespace AgendaSimples
         //Método para ler os dados do arquivo de texto.
         private void Ler()
         {
+            // Crie o arquivo "Contatos.txt" em ../bin/Debug/
             StreamReader leitorDeArquivos = new StreamReader("Contatos.txt");
             listaDeContatos = new Contato[Convert.ToInt32(leitorDeArquivos.ReadLine())];
             // Copia os dados do arquivo de texto para o vetor ListaDeContatos
